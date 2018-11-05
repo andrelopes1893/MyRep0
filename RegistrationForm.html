@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Registration Form</title>
 </head>
 <body>
     <h1>Registration Form</h1>
@@ -20,13 +20,12 @@
             <input type="password" name="pw" id="pw">
         </div>
         <p>
-
+           
         </p>
         <div>
+             Gender:
             <label for="Male">Male</Label>
             <input type="radio" name="gender" id="genderm" value="m">
-        </div>
-        <div
             <label for="Female">Female</label>
             <input type="radio" name="gender" id="genderf" value="f">
         </div>
@@ -34,41 +33,36 @@
 
         </p>
         <div>
-            <label for="terms">Terms</label>
+            <label for="terms">Click to accept our terms</label>
             <input type="checkbox" name="terms" id="terms">
         </div>
         <div>
-            <input type="select" name="referral" id="referral">
-            <option value="--Please Chose--" value="0"></option>
-            <option value="Word of Mouth" value="wom"></option>
-            <option value="Other" value="Other"></option>
-        </div>
-        <p>
-
-        </p>
-        <div>
-            <select>
+            <label for="referral">Where did you hear about us?</label>
+            <select name="referral" id="referral">
+                <option value="0">--Please choose--</option>
                 <optgroup label="Search Engine">
                     <option value="Google">Google</option>
-                    <option value="Yahoo!">Yahoo!</option>
+                    <option value="Yahoo">Yahoo!</option>
                     <option value="MSN">MSN</option>
+                    <option value="OtherSearchEngine">Other</option>
                 </optgroup>
+                <option value="wom">Word of Mouth</option>
+                <option value="other">Other</option>
             </select>
         </div>
         <p>
 
         </p>
         <div>
-            <label for="Comments">Comments</label>
-            <textarea name="Comments" cols="40" rows="10" id="Comments">
-            </textarea>
+            <label for="Comments">Comments</label><br>
+            <textarea name="Comments" cols="40" rows="10" id="Comments"></textarea>
         </div>
         <p>
 
         </p>
         <div>
-                <input type="submit" name="submitbutton" id="submitbutton" value="Register">
-                <input type="reset" name="resetbutton" id="resetbutton" value="Reset">
+            <input type="submit" name="submitbutton" id="submitbutton" value="Register">
+            <input type="reset" name="resetbutton" id="resetbutton" value="Reset">
         </div>
     </form>
 </body>
